@@ -1,6 +1,9 @@
 # pygments-janet-lexer-plugin
 
-A Janet lexer plugin for pygments
+A [Janet](https://janet-lang.org) [lexer plugin for
+pygments](https://pygments.org/docs/plugins/)
+
+![Demo](pygments-janet-lexer-output.png?raw=true "Demo")
 
 ## Setup
 
@@ -15,19 +18,20 @@ pip install ../pygments-janet-lexer-plugin
 
 ## Try Out
 
-Assuming the virtual environment and the current working directory from above...
+Assuming the virtual environment and the current working directory
+from above...
 
 Quick:
 
 ```
-pygmentize ../pygments-janet-lexer-plugin/boot.janet
+pygmentize ../pygments-janet-lexer-plugin/brief.janet
 ```
 
 
 With style and more explicitly:
 
 ```
-pygmentize -P style=gruvbox-dark -l janet ../pygments-janet-lexer-plugin/boot.janet
+pygmentize -P style=gruvbox-dark -l janet ../pygments-janet-lexer-plugin/brief.janet
 ```
 
 ## Credits

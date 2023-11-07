@@ -18,4 +18,4 @@ janet_lexer = "janet:JanetLexer"
 #   hatch run test
 
 [tool.hatch.envs.default.scripts]
-test = "pygmentize -P style=gruvbox-dark -l janet boot.janet"
+test = "pygmentize -P style=gruvbox-dark -l janet brief.janet"
