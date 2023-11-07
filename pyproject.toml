@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pygments-janet-lexer-plugin"
+version = "0.0.1"
+dependencies = ["pygments"]
+readme = "README.md"
+
+
+[project.entry-points."pygments.lexers"]
+janet_lexer = "janet:JanetLexer"
+
+
+# Run with
+#
+#   hatch run test
+
+[tool.hatch.envs.default.scripts]
+test = "pygmentize -P style=gruvbox-dark -l janet boot.janet"
